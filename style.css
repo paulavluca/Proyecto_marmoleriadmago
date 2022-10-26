@@ -1,0 +1,225 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+
+/* NAVBAR */
+.navbar1{
+  background-color: transparent;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar1_content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0px 30px;
+}
+.navbar1 .navbar1_content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar1 .navbar1_menu{
+  display: inline-flex;
+}
+.navbar1_menu li{
+  list-style: none;
+}
+.navbar1_menu li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 110%;
+  margin-left: 40px;
+  font-weight: normal;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+.navbar1_menu li a:hover{
+  color: #ddbc59;
+  cursor: pointer;
+}
+.navbar1.sticky{
+  background-color: #FFFFFF;
+  padding: 10px 0;
+  opacity: 0.9;
+}
+
+/* NAVBAR LOGO */
+  .navbar1_logo img{
+    padding: 0 !important;
+    margin: 0 !important;
+    left: -50px;
+    width: 130px;
+    height: 90px;
+  }
+/* ICON NAVBAR*/
+.icon1{
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.icon1.cancel_btn{
+  position: absolute;
+  right: 30px;
+  top: 20px
+}
+
+
+/* WP BUTTON */
+.whatsapp{
+	position: fixed;
+	cursor: pointer;
+	width: 59px;
+	height: 59px;
+	bottom: 8px;
+	right: 5px;
+	color: #fff !important;
+	background-color: #ddbc59;
+	border-radius: 70px;
+	text-align: center;
+	font-size: 40px;
+	z-index: 9999999;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.whatsapp_hover{
+	text-decoration: none;
+	color: white !important;
+	background-color: #25d366;
+}
+
+.whatsapp-icon{
+	margin-top: 10px;
+}
+/* WP BUTTON */
+
+/* GO TOP BUTTON */
+.container_gotop a:hover{
+  color: #FFF;
+}
+
+.to-top{
+  background: #ddbc59;
+  position: fixed;
+  right: 22px;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 32px;
+  color: #FFFFFF;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .15s;
+  z-index: 10;
+  margin-bottom: 55px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.to-top i{
+  margin-left: 15px;  /* CENTRAR */
+}
+
+.to-top.active{
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+/* GO TOP BUTTON */
+
+.container{
+  padding: 0;
+  margin: 0;
+  height: 2000px;
+  width: 100%;
+  background-color: transparent;
+  z-index: -10;
+}
+
+/* CAROU PRINCIPAL */
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.footer_carou{
+  height: 30px;
+  background-color: rgba(148, 143, 143, 0.418);
+  opacity: 0.2;
+}
+
+/* CARDS */
+.card-columns{
+  padding-top: 100px;
+}
+
+.container_cards{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.card-columns .card {
+  display: inline-block;
+  width: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px !important; //esta es la parte importante para que todas tus card-img tengan la misma medida sin importar el tamaño de la imagen
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+/* FOOTER */
+.container_footer{
+  background-color: rgb(199, 199, 199);
+  height: 75px;
+}
+
+@media screen and (max-width: 830px) {
+	.navbar1 .navbar1_menu{
+    position: fixed;
+    top: -20px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    max-width: 4000px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    z-index: 9999 !important;
+  }
+  .navbar1 .navbar1_menu.active{
+    left: 0%;
+  }
+  .navbar1 .navbar1_menu li{
+    margin-top: 45px;
+  }
+  .navbar1 .navbar1_menu li a{
+    font-size: 23px;
+  }
+  .icon1{
+    display: block;
+  }
+  .icon1.hide{
+    display: none;
+  }
+}
