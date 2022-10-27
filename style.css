@@ -165,6 +165,85 @@ body{
 }
 
 /* CARDS */
+.container_allcards{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: #FFF;
+  position: relative;
+}
+
+.container_card1{
+  display: flex;
+  flex-direction: row;
+}
+
+.card1{
+  height: 500px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+}
+
+.card1:hover{
+  cursor: pointer;
+}
+
+.card1 img{
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;
+  transition: .5s;
+}
+
+.intro{
+  height: 70px;
+  width: 350px;
+  box-sizing: border-box;
+  position: absolute;
+  padding: 5px;
+  background: rgb(27, 27, 27, .5);
+  color: #FFF;
+  bottom: 218px; /* 240px*/
+  transition: .5s;
+}
+
+.intro h1{
+  margin: 10px;
+  font-size: 40px;
+}
+
+.intro p{
+  font-size: 20px;
+  margin-top: -8px;
+  /* visibility: hidden; */
+  opacity: 0;
+  color: #FFF;
+}
+
+.card1:hover .intro{
+  height: 280px;
+  bottom: 215px;
+  /* background: #000; */
+  opacity: 0.5;
+}
+
+.card1:hover img{
+  transform: scale(1.1) rotate(-0.5deg);
+}
+
+.card1:hover p{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* CARDS 1*/
+
+/* CARDS 2*/
+
 .card-columns{
   padding-top: 100px;
 }
