@@ -193,7 +193,7 @@ body{
   flex-wrap: wrap;
   flex-direction: row;
   background: #FFF;
-  position: relative;
+  position: absolute;
 }
 
 .container_card1{
@@ -223,11 +223,11 @@ body{
   height: 70px;
   width: 350px;
   box-sizing: border-box;
-  position: absolute;
+  position: relative;
   padding: 5px;
   background: rgb(27, 27, 27, .5);
   color: #FFF;
-  bottom: 218px; /* 240px*/
+  bottom: 70px; /* 240px*/
   transition: .5s;
   margin-bottom: 0px;
 }
@@ -240,7 +240,7 @@ body{
 .intro p{
   font-size: 20px;
   margin-top: -8px;
-  /* visibility: hidden; */
+   visibility: hidden; 
   opacity: 0;
   color: #FFF;
 }
@@ -286,11 +286,41 @@ body{
   border-top-right-radius: calc(0.25rem - 1px);
 }
 
+/* CONTACTO */
+.container_contacto{
+  height: 500px;
+  background-color: white;
+  visibility: visible;
+}
+.container_contacto h1{
+  margin-top: 80px;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 25px;
+  font-family: sans-serif;
+  color: #000;
+}
+
+.container_contacto h1:hover{
+  cursor: pointer;
+  transition: .2s;
+  color: #ddbc59;
+}
+
+.container_contacto hr{
+  width: 200px;
+  margin: auto;
+  color: #000;
+}
+
 /* FOOTER */
 .container_footer{
   background-color: rgb(199, 199, 199);
   height: 75px;
+  position: absolute;
 }
+
+
 
 @media screen and (max-width: 830px) {
 	.navbar1 .navbar1_menu{
