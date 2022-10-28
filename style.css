@@ -165,6 +165,26 @@ body{
 }
 
 /* CARDS */
+.container_cardtitle h1{
+  margin-top: 80px;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 25px;
+  font-family: sans-serif;
+  color: #000;
+}
+.container_cardtitle hr{
+  width: 400px;
+  margin: auto;
+  color: #000;
+}
+
+.container_cardtitle h1:hover{
+  cursor: pointer;
+  transition: .2s;
+  color: #ddbc59;
+}
+
 .container_allcards{
   display: flex;
   justify-content: center;
@@ -209,6 +229,7 @@ body{
   color: #FFF;
   bottom: 218px; /* 240px*/
   transition: .5s;
+  margin-bottom: 0px;
 }
 
 .intro h1{
@@ -227,7 +248,7 @@ body{
 .card1:hover .intro{
   height: 280px;
   bottom: 215px;
-  /* background: #000; */
+  background: #000;
   opacity: 0.5;
 }
 
@@ -238,7 +259,7 @@ body{
 .card1:hover p{
   opacity: 1;
   visibility: visible;
-}
+} 
 
 /* CARDS 1*/
 
