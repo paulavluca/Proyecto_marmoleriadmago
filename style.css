@@ -162,38 +162,41 @@ body{
   height: 30px;
   background-color: rgba(148, 143, 143, 0.418);
   opacity: 0.2;
+  display: block;
 }
 
 /* CARDS */
+.tarjetas{
+  display: block;
+}
+
 .container_cardtitle h1{
   margin-top: 80px;
   text-align: center;
   font-size: 2em;
   margin-bottom: 25px;
   font-family: sans-serif;
-  color: #000;
+  color: #ddbc59;
 }
 .container_cardtitle hr{
   width: 400px;
   margin: auto;
   color: #000;
-}
-
-.container_cardtitle h1:hover{
-  cursor: pointer;
-  transition: .2s;
-  color: #ddbc59;
+  padding-bottom: 45px;
 }
 
 .container_allcards{
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
   background: #FFF;
-  position: absolute;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
 }
 
 .container_card1{
@@ -304,7 +307,7 @@ body{
 .container_contacto h1:hover{
   cursor: pointer;
   transition: .2s;
-  color: #ddbc59;
+  /* color: #ddbc59; */
 }
 
 .container_contacto hr{
@@ -313,12 +316,106 @@ body{
   color: #000;
 }
 
+.button_catalogo{
+  margin-top: 70px;
+  background-color: #ddbc59;
+  color: #FFF;
+  border-radius: 4%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  border-style: none;
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 30%);
+  font-size: 22px;
+  height: 35px;
+  width: 250px;
+  position: relative !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* SECCION DESC PROFESIONES */
+.desc_profesionales_section{
+  margin-top: 145px;
+  height: 700px;
+  background-image: url("./img/pexels-rene-asmussen-1358900.jpg");
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container_desc h1{
+  font-size: 2.2em;
+  padding-top: 100px;
+  padding-left: 100px;
+  color: #000;
+  font-family: sans-serif;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+
+.container_desc hr{
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 318px;
+  border: 0 none;
+  height: 3px;
+  background-color: #000 !important;
+  color: #000;
+}
+
+.container_desc p{
+  margin-top: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 1.2em;
+  color: #000;
+  font-weight: 550;
+}
+
+.container_desc button{
+  margin-top: 85px;
+  margin-left: 100px;
+  height: 50px;
+  width: 150px;
+  background-color: #ddbc59;
+  color: #FFF;
+  border-radius: 8%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  border-style: none;
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 30%);
+  opacity: 1 !important;
+}
+
+/* CONTACTO */
+.section_contacto{
+  height: 500px;
+  background-color:rgb(88, 85, 85); ;
+}
+
+.mapa_contacto{
+  margin-top: 35px;
+  position: relative !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.mapa_contacto p{
+  margin-top: 25px;
+  font-family: "Open-sans", sans-serif;
+  color: gray;
+}
+
 /* FOOTER */
 .container_footer{
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(180, 180, 180);
   height: 75px;
-  position: absolute;
+  display: block;
 }
+
 
 
 
@@ -351,5 +448,17 @@ body{
   }
   .icon1.hide{
     display: none;
+  }
+  .footer_carou{
+    display: block;
+  }
+  .carousel-item {
+    height: 100vh;
+    min-height: 300px !important;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
