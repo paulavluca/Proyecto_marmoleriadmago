@@ -128,7 +128,7 @@ body{
   box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 .to-top i{
-  margin-left: 15px;  /* CENTRAR */
+  margin-left: 13px;  /* CENTRAR */
 }
 
 .to-top.active{
@@ -294,6 +294,9 @@ body{
   height: 500px;
   background-color: white;
   visibility: visible;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .container_contacto h1{
   margin-top: 80px;
@@ -390,8 +393,8 @@ body{
 
 /* CONTACTO */
 .section_contacto{
-  height: 500px;
-  background-color:rgb(88, 85, 85); ;
+  height: 400px;
+  /* position: absolute; */
 }
 
 .mapa_contacto{
@@ -410,13 +413,74 @@ body{
 }
 
 /* FOOTER */
-.container_footer{
-  background-color: rgb(180, 180, 180);
-  height: 75px;
-  display: block;
+
+.datos_contacto{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25%;
+  padding-right: 25%;  
 }
 
+.contacto1{
+  width: 50%;
+  padding-left: -20px;
+}
 
+.contacto1 p{
+  text-align: justify;
+}
+
+.contacto2{
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto2 p{
+  margin-left: 200px;
+}
+
+.pie_pag{
+  background-color: rgba(0, 0, 0, 0.322);
+  height: 80px;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px !important;
+  padding-top: 10px;
+}
+
+.pie1 p{
+  color: #FFF;
+  font-family: "Open sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 200;
+  text-align: right;
+  padding-top: 1%;
+  letter-spacing: 3px;
+  line-height: 25px;
+  margin-right: 100px;
+}
+
+.pie2 p{
+  color: #FFF;
+  font-family: "Open sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 200;
+  text-align: right;
+  padding-top: 2%;
+  letter-spacing: 3px;
+  line-height: 25px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.pie2 p a{
+  color: #FFF;
+}
 
 
 @media screen and (max-width: 830px) {
