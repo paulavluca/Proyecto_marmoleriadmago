@@ -593,7 +593,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .body_contacto_index{
   display: flex;
   justify-content: space-between;
-  height: 500px;
+  height: 1000px;
   margin-top: 250px;
   padding-left: 200px;
   padding-right: 200px;
@@ -694,7 +694,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .formulario_contacto{
-  height: 400px;
+  height: 500px;
   width: 60%;
   box-shadow: 0px 2px 25px rgb(194 194 194 / 55%);
   border-radius: 25px;
@@ -702,16 +702,56 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   padding: 0;
   position: absolute;
   position: absolute;
-  margin-top: 100px;
+  margin-top: -370px;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
+.formulario_contacto h1{
+  font-size: 1.5em;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 2.5px;
+  padding-top: 25px;
+}
 
+.formulario_contacto p{
+  padding-left: 75px;
+  padding-right: 75px;
+  text-align: justify;
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-size: 1.1em;
+}
 
+.formulario_contacto ul{
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: justify;
+  list-style: decimal;
+  font-family: sans-serif;
+}
 
+.formulario_contacto li{
+  padding-top: 25px;
+}
 
-
+.formulario_contacto button{
+  text-align: center;
+  align-items: center;
+  background-color: #ddbc59;
+  color: #FFF;
+  border-radius: 3%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 3em;
+  border-style: none;
+  box-shadow: 2px 2px 10px rgb(0 0 0 / 30%);
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+}
 
 
 
